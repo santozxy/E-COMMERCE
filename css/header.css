@@ -108,7 +108,7 @@
     padding: .5rem .5rem;
     border-radius: .5rem;
     width: 30rem;
-    border-style: none;
+    border: 0;
 }
 
 @keyframes initialize {
@@ -124,7 +124,7 @@
 }
 
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1280px) {
     .nav-bar {
         padding: 1.5rem;
         display: flex;
@@ -133,5 +133,12 @@
     }
     .nav-bar li a {
         font-size: 1rem;
+    }
+
+    .search-bar {
+        padding: .5rem .5rem;
+        border-radius: .5rem;
+        width: 10rem;
+        border: 0;
     }
 }
