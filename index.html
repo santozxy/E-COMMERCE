@@ -7,6 +7,7 @@
     <title>AudioJShop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
 
     <!-- LINKS EXTERNOS -->
@@ -17,54 +18,90 @@
 <body>
     <div class="top-container">
         <p>+55 86 0000 - 0000</p>
-        <p>50% OFF on selected items | Shop now!</p>
+        <p>50% OFF nos produtos selecionados | Compre agora!</p>
         <div class="top-drops">
-            <p>English</p>
-            <p>Location</p>
+            <p>Portugûes <i class="fa-solid fa-caret-down"></i></p>
+            <p>Brasil <i class="fa-solid fa-caret-down"></i></p>
         </div>
     </div>
-    
+
     <header>
         <a href="#" class="logo">
-            <h1>HSHOP</h1>
-            <img src="assets/logo.png" alt="LOGO">
+            <h1>HSHOP<a href="#" class="logo"></h1>
         </a>
         <nav>
             <ul class="nav-bar">
-                <li><a href="">Categories</a></li>
-                <li><a href="">Latest</a></li>
-                <li><a href="">Promocional</a></li>
-                <li><a href="">News</a></li>
-                <li><input class="search-bar" type="search" name="" id="" placeholder="Search product"></li>
-                <li><a href="">My Account</a></li>
-                <li><a href="">Cart</a></li>
+                <li><a href="#">Categorias<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Recente<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Promoções<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Novidades<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."><i
+                        class="fa-solid fa-search"></i></li>
+                <li><a href="#">Minha conta <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
-    <section class="initial">
-        <div class="bg-initial">
-            <div class="slogan">
-                <h1>50% OFF in Headphones JBL</h1>
-                <button>Buy now</button>
+
+    <section class="slider">
+        <div class="slider-content">
+
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box one">
+                <img class="img-desktop" src="assets/banner.jpg" alt="slide 1">
             </div>
+
+            <div class="slide-box">
+                <img class="img-desktop" src="assets/banner2.jpg" alt="slide 3">
+            </div>
+            <div class="slide-box">
+                <img class="img-desktop" src="assets/banner3.jpg" alt="slide 3">
+
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+
+        </div>
+        <div class="scroll-info">
+            <marquee direction=right>A cada R$ 119,00 em compras você ganha um cupom de frete grátis para usar como
+                quiser! | 50% OFF em produtos selecionados, não perca</marquee>
         </div>
     </section>
-    <section class="for-you">
-        <div class="drops">
-            <button>Headphone Types</button>
-            <button>Prices</button>
-            <button>Reviews</button>
-            <button>Color</button>
-            <button>Material</button>
-            <button>Offer</button>
-            <button>All Filters</button>
-            <div>
-                <button>Sort by</button>
+
+    <section class="home">
+        <div class="categories">
+            <button>Wireless</button>
+            <button>Auricular</button>
+            <button>Bluetooth</button>
+            <button>Supra-auricular</button>
+            <button>TWS</button>
+            <button>Intra-auricular</button>
+            <button>Surround 5.1</button>
+            <button>Circumaural</button>
+
+        </div>
+        <div class="products">
+            <div class="title-section">
+                <h1>Recomendados para você</h1>
+                <span></span>
             </div>
         </div>
-        <h1>Recommend for you</h1>
     </section>
     <script src="https://kit.fontawesome.com/bdfd365adb.js" crossorigin="anonymous" defer></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

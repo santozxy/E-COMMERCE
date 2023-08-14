@@ -2,9 +2,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(135, 1, 184), #107d79);
+    background-color: #141414;
     padding: .5rem;
     color: #fff;
+    animation: initialize 0.4s forwards;
+    border-bottom: 1px solid #303030a3;
 }
 
 .top-drops {
@@ -13,10 +15,16 @@
 }
 
 header {
+    animation: initialize 0.4s forwards;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #fff;
+    width: 100%;
+}
+
+header h1{
+    color: var(--terciary);
 }
 
 .logo {
@@ -24,6 +32,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
+    gap: 1rem;
 }
 
 .logo img {
@@ -41,11 +50,14 @@ header {
     align-items: center;
 }
 
-
 .nav-bar li a {
-    height: 0;
-    width: 0;
     color: #fff;
+    font-size: 1.2rem;
+    gap: 1rem;
+}
+
+.nav-bar li i {
+    margin-left: 0.3rem;
     font-size: 1.2rem;
 }
 
@@ -59,10 +71,9 @@ header {
 }
 
 .nav-bar li a:hover::after {
-    height: 0;
     width: 100%;
     padding: 0;
-    border-bottom: 4px solid #804c9f;
+    border-bottom: 4px solid var(--primary);
 }
 
 .nav-bar li a.active {
@@ -70,11 +81,23 @@ header {
     height: 0;
     width: 100%;
     padding: 0;
-    border-bottom: 4px solid var(--secondary);
+    border-bottom: 4px solid var(--primary);
 }
 
 .search-bar {
     padding: .5rem 1rem;
     border-radius: .5rem;
     border-style: none;
+}
+
+@keyframes initialize {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }

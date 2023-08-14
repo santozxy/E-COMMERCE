@@ -1,69 +1,42 @@
-.initial {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+.home {
+    margin-top: 5rem;
+    padding: 1rem;
 }
 
-.bg-initial {
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position: center center;
-    background-image: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.1),
-            #000),
-        url("../assets/bg2.jpg");
+.categories {
     display: flex;
-    justify-content: start;
+    justify-content: space-around;
     align-items: center;
 }
 
-.bg-initial::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-}
-
-.slogan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.slogan h1 {
-    font-size: 4rem;
-    color: #fff;
-}
-
-.slogan button {
-    padding: 0.5rem 10rem;
-    font-size: 2rem;
+.categories button {
+    padding: 3rem 2.2rem;
+    border-radius: 0.6rem;
+    margin-right: .5rem;
+    background-color: var(--primary);
     font-weight: bold;
-    margin: 1rem;
-    border-radius: .5rem;
-    background-image: linear-gradient(to right, rgb(135, 1, 184), #107d79);
+    box-shadow: inset 9px -6px 20px -3px rgba(0, 0, 0, 0.8);
     color: #fff;
-    cursor: pointer;
-    transition: .4s ease-in-out;
+    font-size: 1.3rem;
 }
 
-.slogan button:hover {
-    transform: scale(1.07);
-    border: 1px solid #fff;
-}
-
-.drops {
+.title-section {
+    padding: 3rem 0;
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    flex-direction: column;
 }
 
-.for-you {
-    background-color: #d6d6d6;
+.title-section h1 {
+    font-size: 2.3rem;
+    color: #0c7976;
 }
+
+
+.title-section span {
+    width: 10%;
+    border: 2px solid var(--primary);
+}
+
+
+  
