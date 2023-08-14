@@ -1,46 +1,66 @@
 .top-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #141414;
-    padding: .5rem;
-    color: #fff;
+    padding: 0 1rem;
+    color: var(--terciary);
     animation: initialize 0.4s forwards;
     border-bottom: 1px solid #303030a3;
 }
 
-.top-drops {
-    display: flex;
-    gap: 1rem;
+.social-icons i {
+    font-size: 2rem;
+    margin-right: 0.5rem;
 }
 
-header {
+.top-title h1{
+    font-size: 3rem;
+}
+
+.top-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-actions a{
+    display: flex;
+    gap: .5rem;
+    color: var(--terciary);
+    justify-content: center;
+    align-items: center;
+}
+
+.top-actions button{
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--terciary);
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navigation {
     animation: initialize 0.4s forwards;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: #fff;
+    color: var(--terciary);
     width: 100%;
 }
 
-header h1{
-    color: var(--terciary);
-}
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--terciary);
     gap: 1rem;
 }
 
-.logo img {
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
-    object-position: center;
-}
 
 .nav-bar {
     padding: 1.5rem;
@@ -51,7 +71,7 @@ header h1{
 }
 
 .nav-bar li a {
-    color: #fff;
+    color: var(--terciary);
     font-size: 1.2rem;
     gap: 1rem;
 }
@@ -85,8 +105,9 @@ header h1{
 }
 
 .search-bar {
-    padding: .5rem 1rem;
+    padding: .5rem .5rem;
     border-radius: .5rem;
+    width: 30rem;
     border-style: none;
 }
 
@@ -99,5 +120,18 @@ header h1{
     to {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .nav-bar {
+        padding: 1.5rem;
+        display: flex;
+        gap: 2rem;
+ 
+    }
+    .nav-bar li a {
+        font-size: 1rem;
     }
 }

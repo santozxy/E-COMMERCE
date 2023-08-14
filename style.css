@@ -1,7 +1,7 @@
 :root{
-    --primary:#a80e1a;
-    --secundary:#a42d8a;
-    --terciary:#fff;
+    --bg:#131313;
+     --primary:#a80e1a;
+    --terciary:#fff; 
     --quaternary:#000;
 }
 
@@ -20,7 +20,7 @@ html{
 }
 
 body {
-    background-color: #131313;
+    background-color: var(--bg);
     font-family: Poppins;
 }
 
@@ -35,3 +35,4 @@ a {
 i{
     color: var(--primary);
 }
+
