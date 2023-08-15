@@ -16,13 +16,13 @@ function proxImg() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const colorsButton = document.querySelector('.colors');
-    const icon = colorsButton.querySelector('i');
+    const button = document.querySelector('.btn-color');
+    const icon = button.querySelector('i');
     let isLightMode = false;
 
-    colorsButton.addEventListener('click', function() {
+    button.addEventListener('click', function() {
         isLightMode = !isLightMode;
-        const newBgColor = isLightMode ? '#f2f2f2' : '#131313';
+        const newBgColor = isLightMode ? '#f4f4f4' : '#131313';
         const newTertiaryColor = isLightMode ? '#000' : '#fff';
         const newIconClass = isLightMode ? 'fa-moon' : 'fa-sun';
 
@@ -32,3 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
         icon.classList.add(newIconClass);
     });
 });
+
+
+function openSideBar(){
+  document.getElementById("sidebar").style.visibility = "visible"
+}
+
+function closeSideBar(){
+  document.getElementById("sidebar").style.visibility = "hidden"
+}
+
+
+

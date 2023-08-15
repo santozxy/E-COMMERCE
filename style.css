@@ -24,7 +24,15 @@ body {
     font-family: Poppins;
 }
 
-main{
+aside{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: var(--bg);
+}
+
+section{
     max-width: 1600px;
     margin: auto;
 }

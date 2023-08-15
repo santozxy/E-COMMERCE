@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AudioJShop</title>
+    <title>HSHOP</title>
+    <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/products.css">
     <!-- LINKS EXTERNOS -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@200;300;400&display=swap"
         rel="stylesheet">
@@ -18,37 +18,49 @@
 <header>
     <div class="top-container">
         <div class="social-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
         </div>
-        <div class="top-title">
+        <div class="top-title desktop">
             <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
         </div>
         <div class="top-actions">
-            <a href="#">Minha conta<i class="fa-solid fa-user"></i></a>
-            <a href="#">Atendimento<i class="fa-solid fa-circle-info"></i></a>
-            <button class="colors">
-                <p>Modo de luz</p><i class="fa-solid fa-sun"></i>
+            <a href="#">Login<i class="fa-solid fa-user"></i></a>
+            <a href="#">Atendimento<i class="fa-brands fa-rocketchat"></i></a>
+            <button class="btn-color">
+                <p>Tema</p><i class="fa-solid fa-sun"></i>
             </button>
         </div>
     </div>
 
-    <div class="navigation">
-        <nav>
-            <ul class="nav-bar">
-                <li><a href="#">Categorias<i class="fa-solid fa-caret-down"></i></a></li>
-                <li><a href="#">Recente<i class="fa-solid fa-caret-down"></i></a></li>
-                <li><a href="#">Promoções<i class="fa-solid fa-caret-down"></i></a></li>
-                <li><a href="#">Novidades<i class="fa-solid fa-caret-down"></i></a></li>
-                <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."><i
-                        class="fa-solid fa-search"></i></li>
-                <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
-                <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
-            </ul>
-        </nav>
-    </div>
+    <!-- NAV MOBILE -->
+    <nav class="nav-mobile">
+        <ul class="nav-bar">
+            <button class="btn-open"><i class="fa-solid fa-bars"></i> </button>
+            <div class="top-title">
+                <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
+            </div>
+            <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."></li>
+            <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- NAV DESKTOP -->
+    <nav class="nav-desktop">
+        <ul class="nav-bar">
+            <li><a href="#">Departamentos<i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="#">Promoções<i class="fa-solid fa-caret-down"></i></a></li>
+            <li><a href="#">Novidades<i class="fa-solid fa-caret-down"></i></a></li>
+            <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."></li>
+            <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
+            <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+
 </header>
+
 
 <body>
     <main>
@@ -61,14 +73,14 @@
                 <input type="radio" name="btn-radio" id="radio3">
 
                 <div class="slide-box one">
-                    <img class="img-desktop" src="assets/banner.jpg" alt="slide 1">
+                    <img class="img-desktop" src="assets/sliders/slider1.jpg" alt="slide 1">
                 </div>
 
                 <div class="slide-box">
-                    <img class="img-desktop" src="assets/banner2.jpg" alt="slide 3">
+                    <img class="img-desktop" src="assets/sliders/slider2.jpg" alt="slide 3">
                 </div>
                 <div class="slide-box">
-                    <img class="img-desktop" src="assets/banner3.jpg" alt="slide 3">
+                    <img class="img-desktop" src="assets/sliders/slider3.jpg" alt="slide 3">
 
                 </div>
 
@@ -92,7 +104,14 @@
         </section>
 
         <section class="home">
-            <div class="categories">
+            <div class="adds">
+                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical1.jpg" alt="Banner AirPods"></a></div>
+                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical2.jpg" alt="Banner Audora Sem Fio"></a>
+                </div>
+                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical3.jpg"
+                            alt="Banner Headset Wireless"></a></div>
+            </div>
+            <!--<div class="categories">
                 <button>
                     <p>Wireless</p>
                 </button>
@@ -118,71 +137,21 @@
                     <p>Circumaural</p>
                 </button>
 
-            </div>
+            </div> -->
+
+
             <div class="title-section">
                 <h1>Mais populares</h1>
                 <span></span>
             </div>
             <div class="products">
                 <div class="card">
-                    <div>
+                    <div class="card-img">
                         <img src="assets/products/product1.jpg" alt="">
                     </div>
                     <div class="card-info">
                         <div class="card-title">
-                            <h3>Headphone Wireless</h3>
-                        </div>
-                        <div class="card-description">
-                            <ul class="stars">
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="">
-                                    <p>421+</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-btn">
-                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="assets/products/product2.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title">
-                            <h3>Headphone Wireless</h3>
-                        </div>
-                        <div class="card-description">
-                            <ul class="stars">
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="">
-                                    <p>421+</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-btn">
-                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="assets/products/product3.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title">
-                            <h3>Headphone Wireless</h3>
+                            <h3>Headset Gamer</h3>
                         </div>
                         <div class="card-description">
                             <ul class="stars">
@@ -192,7 +161,59 @@
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li>
-                                    <p>421+</p>
+                                    <p>99+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/products/product2.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headset Gamer</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li>
+                                    <p>99+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/products/product3.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li>
+                                    <p>99+</p>
                                 </li>
                             </ul>
                         </div>
@@ -204,39 +225,14 @@
                         <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
                     </div>
                 </div>
+
                 <div class="card">
-                    <div>
-                        <img src="assets/products/product4.jpg" alt="">
-                    </div>
-                    <div class="card-info">
-                        <div class="card-title">
-                            <h3>Headphone Wireless</h3>
-                        </div>
-                        <div class="card-description">
-                            <ul class="stars">
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="">
-                                    <p>421+</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="card-btn">
-                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
-                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
+                    <div class="card-img">
                         <img src="assets/products/product5.jpg" alt="">
                     </div>
                     <div class="card-info">
                         <div class="card-title">
-                            <h3>Headphone Wireless</h3>
+                            <h3>Auricular</h3>
                         </div>
                         <div class="card-description">
                             <ul class="stars">
@@ -245,8 +241,8 @@
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="">
-                                    <p>421+</p>
+                                <li>
+                                    <p>99+</p>
                                 </li>
                             </ul>
                         </div>
@@ -257,12 +253,12 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div>
+                    <div class="card-img">
                         <img src="assets/products/product6.jpg" alt="">
                     </div>
                     <div class="card-info">
                         <div class="card-title">
-                            <h3>Headphone Wireless</h3>
+                            <h3>Earphone</h3>
                         </div>
                         <div class="card-description">
                             <ul class="stars">
@@ -271,8 +267,8 @@
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
                                 <li class="star"><i class="fa-solid fa-star"></i></li>
-                                <li class="">
-                                    <p>421+</p>
+                                <li>
+                                    <p>99+</p>
                                 </li>
                             </ul>
                         </div>
@@ -283,7 +279,10 @@
                     </div>
                 </div>
             </div>
+
         </section>
+
+
     </main>
     <script src="https://kit.fontawesome.com/bdfd365adb.js" crossorigin="anonymous" defer></script>
     <script src="script.js"></script>

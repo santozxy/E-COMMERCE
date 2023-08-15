@@ -1,35 +1,39 @@
-
-header{
+header {
     width: 100%;
 }
 
 .top-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 1rem;
     color: var(--terciary);
-    animation: initialize 0.4s forwards;
     border-bottom: 1px solid #303030a3;
 }
 
+.top-container div {
+    flex: 1;
+}
+
 .social-icons i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 0.5rem;
 }
 
-.top-title h1{
+
+.top-title h1 {
+    text-align: center;
     font-size: 3rem;
 }
 
 .top-actions {
     display: flex;
     gap: 1rem;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 }
 
-.top-actions a{
+.top-actions a {
     display: flex;
     gap: .5rem;
     color: var(--terciary);
@@ -37,7 +41,7 @@ header{
     align-items: center;
 }
 
-.top-actions button{
+.top-actions button {
     background-color: transparent;
     font-size: 1rem;
     color: var(--terciary);
@@ -46,15 +50,6 @@ header{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-.navigation {
-    animation: initialize 0.4s forwards;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: var(--terciary);
-    width: 100%;
 }
 
 
@@ -66,6 +61,11 @@ header{
     gap: 1rem;
 }
 
+.nav-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .nav-bar {
     padding: 1.5rem;
@@ -112,9 +112,19 @@ header{
 .search-bar {
     padding: .5rem .5rem;
     border-radius: .5rem;
-    width: 30rem;
+    width: 20rem;
     border: 0;
+    background-color: var(--terciary);
 }
+
+
+/* NAV MOBILE */
+
+.nav-mobile {
+    display: none;
+}
+
+
 
 @keyframes initialize {
     from {
@@ -134,8 +144,9 @@ header{
         padding: 1.5rem;
         display: flex;
         gap: 2rem;
- 
+
     }
+
     .nav-bar li a {
         font-size: 1rem;
     }
@@ -143,7 +154,48 @@ header{
     .search-bar {
         padding: .5rem .5rem;
         border-radius: .5rem;
-        width: 10rem;
+        width: 15rem;
+        border: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .top-title h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-desktop,
+    .desktop {
+        display: none;
+    }
+
+    .nav-bar li a {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        padding: .5rem 2rem;
+        border-radius: .5rem;
+        width: 90%;
+        border: 0;
+    }
+}
+
+@media screen and (max-width:820px) {
+    .top-title h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        width: 90%;
         border: 0;
     }
 }
