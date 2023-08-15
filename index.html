@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -9,121 +9,282 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
-
+    <link rel="stylesheet" href="css/products.css">
     <!-- LINKS EXTERNOS -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@200;300;400&display=swap"
         rel="stylesheet">
 </head>
 
+<header>
+    <div class="top-container">
+        <div class="social-icons">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="top-title">
+            <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
+        </div>
+        <div class="top-actions">
+            <a href="#">Minha conta<i class="fa-solid fa-user"></i></a>
+            <a href="#">Atendimento<i class="fa-solid fa-circle-info"></i></a>
+            <button class="colors">
+                <p>Modo de luz</p><i class="fa-solid fa-sun"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#">Categorias<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Recente<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Promoções<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Novidades<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."><i
+                        class="fa-solid fa-search"></i></li>
+                <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
+                <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
 <body>
-    <header>
-        <div class="top-container">
-            <div class="social-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
+    <main>
+
+        <section class="slider">
+            <div class="slider-content">
+
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box one">
+                    <img class="img-desktop" src="assets/banner.jpg" alt="slide 1">
+                </div>
+
+                <div class="slide-box">
+                    <img class="img-desktop" src="assets/banner2.jpg" alt="slide 3">
+                </div>
+                <div class="slide-box">
+                    <img class="img-desktop" src="assets/banner3.jpg" alt="slide 3">
+
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+
             </div>
-            <div class="top-title">
-                <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
+            <div class="scroll-info">
+                <marquee direction=right>A cada R$ 119,00 em compras você ganha um cupom de frete grátis para usar como
+                    quiser! | 50% OFF em produtos selecionados, não perca</marquee>
             </div>
-            <div class="top-actions">
-                <a href="#">Minha conta<i class="fa-solid fa-user"></i></a>
-                <a href="#">Atendimento<i class="fa-solid fa-circle-info"></i></a>
-                <button class="colors">
-                    <p>Modo de luz</p><i class="fa-solid fa-sun"></i>
+        </section>
+
+        <section class="home">
+            <div class="categories">
+                <button>
+                    <p>Wireless</p>
                 </button>
-            </div>
-        </div>
-
-        <div class="navigation">
-            <nav>
-                <ul class="nav-bar">
-                    <li><a href="#">Categorias<i class="fa-solid fa-caret-down"></i></a></li>
-                    <li><a href="#">Recente<i class="fa-solid fa-caret-down"></i></a></li>
-                    <li><a href="#">Promoções<i class="fa-solid fa-caret-down"></i></a></li>
-                    <li><a href="#">Novidades<i class="fa-solid fa-caret-down"></i></a></li>
-                    <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."><i
-                            class="fa-solid fa-search"></i></li>
-                    <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
-                    <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="slider">
-        <div class="slider-content">
-
-            <input type="radio" name="btn-radio" id="radio1">
-            <input type="radio" name="btn-radio" id="radio2">
-            <input type="radio" name="btn-radio" id="radio3">
-
-            <div class="slide-box one">
-                <img class="img-desktop" src="assets/banner.jpg" alt="slide 1">
-            </div>
-
-            <div class="slide-box">
-                <img class="img-desktop" src="assets/banner2.jpg" alt="slide 3">
-            </div>
-            <div class="slide-box">
-                <img class="img-desktop" src="assets/banner3.jpg" alt="slide 3">
+                <button>
+                    <p>Auricular</p>
+                </button>
+                <button>
+                    <p>Bluetooth</p>
+                </button>
+                <button>
+                    <p>Supra-auricular</p>
+                </button>
+                <button>
+                    <p>TWS</p>
+                </button>
+                <button>
+                    <p>Intra-auricula</p>
+                </button>
+                <button>
+                    <p>Surround 5.1</p>
+                </button>
+                <button>
+                    <p>Circumaural</p>
+                </button>
 
             </div>
-
-            <div class="nav-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-
-            <div class="nav-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-            </div>
-
-        </div>
-        <div class="scroll-info">
-            <marquee direction=right>A cada R$ 119,00 em compras você ganha um cupom de frete grátis para usar como
-                quiser! | 50% OFF em produtos selecionados, não perca</marquee>
-        </div>
-    </section>
-
-    <section class="home">
-        <div class="categories">
-            <button>
-                <p>Wireless</p>
-            </button>
-            <button>
-                <p>Auricular</p>
-            </button>
-            <button>
-                <p>Bluetooth</p>
-            </button>
-            <button>
-                <p>Supra-auricular</p>
-            </button>
-            <button>
-                <p>TWS</p>
-            </button>
-            <button>
-                <p>Intra-auricula</p>
-            </button>
-            <button>
-                <p>Surround 5.1</p>
-            </button>
-            <button>
-                <p>Circumaural</p>
-            </button>
-
-        </div>
-        <div class="products">
             <div class="title-section">
-                <h1>Recomendados para você</h1>
+                <h1>Mais populares</h1>
                 <span></span>
             </div>
-        </div>
-    </section>
+            <div class="products">
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product1.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="">
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product2.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="">
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product3.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li>
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">
+                            <p>R$ 99,90</p><i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product4.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="">
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product5.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="">
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <img src="assets/products/product6.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <div class="card-title">
+                            <h3>Headphone Wireless</h3>
+                        </div>
+                        <div class="card-description">
+                            <ul class="stars">
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="star"><i class="fa-solid fa-star"></i></li>
+                                <li class="">
+                                    <p>421+</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-btn">
+                        <button class="btn-cart">R$ 99,90 <i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-favorite"><i class="fa-solid fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://kit.fontawesome.com/bdfd365adb.js" crossorigin="anonymous" defer></script>
     <script src="script.js"></script>
 </body>

@@ -33,31 +33,7 @@ section.slider{
 }
 
 .nav-manual, .nav-auto{
-    position: absolute;
-    width: 100%;
-    margin-top: 35%;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid  var(--primary);;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
-    margin-right: 10px;
-}
-
-.nav-manual .manual-btn:hover{
-    background-color:  var(--primary);
-}
-
-#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: var(--primary);
+    display: none;
 }
 
 #radio1:checked ~ .one{
