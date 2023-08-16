@@ -53,3 +53,7 @@ i{
 h3{
     color: var(--terciary);
 }
+
+button{
+    font-family: Poppins;
+}

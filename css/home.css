@@ -55,6 +55,7 @@
     width: 100%;
 }
 
+
 .card {
     display: flex;
     flex-direction: column;
@@ -64,7 +65,15 @@
     border-radius: .5rem;
     border: 1px solid rgba(47, 47, 47, 0.4);
     gap: 1rem;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    opacity: 1;
 }
+
+.card:hover {
+    transform: scale(1.05);
+}
+
 .card-title {
     text-align: center;
 }
@@ -117,6 +126,19 @@
 .btn-favorite {
     font-size: 1.5rem;
     background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.4rem;
+}
+
+.btn-favorite i {
+    color: #fff;
+    transition: color .4s ease-in-out;
+}
+
+.btn-favorite i:hover {
+    color: var(--primary);
 }
 
 
@@ -147,7 +169,7 @@
 
 
 @media screen and (max-width:480px) {
-    .products{
+    .products {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
