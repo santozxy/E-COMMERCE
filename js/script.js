@@ -139,7 +139,7 @@ products.forEach((product) => {
         <button class="btn-cart">
           <p class="value">${product.value} <i class="fa-solid fa-cart-shopping"></i></p>
         </button>
-        <button class="btn-favorite"><i class="fa-solid fa-heart favorite"></i></button>
+        <button class="btn-favorite" name ="Favorite button"><i class="fa-solid fa-heart favorite"></i></button>
       </div>
     </div>
   `;
