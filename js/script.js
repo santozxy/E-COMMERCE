@@ -7,6 +7,7 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: true,
   fadeOut: true,
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".btn-color");
   const icon = button.querySelector("i");
@@ -35,61 +36,70 @@ function closeSideBar() {
 
 const products = [
   {
-    brand: "Sony",
+    id: "0",
     img: "../assets/products/product1.jpg",
     title: "Headphone 5.1",
     value: "R$ 789,99",
     rating: "4.9",
   },
   {
+    id: "1",
     img: "../assets/products/product2.jpg",
     title: "TWS Pulse",
     value: "R$ 179,99",
     rating: "4.7",
   },
   {
+    id: "2",
     img: "../assets/products/product3.jpg",
     title: "TWS Airbuds",
     value: "R$ 149,99",
     rating: "4.4",
   },
   {
+    id: "3",
     img: "../assets/products/product4.jpg",
     title: "Earphone 7.1",
     value: "R$ 299,99",
     rating: "4.8",
   },
   {
+    id: "4",
     img: "../assets/products/product5.jpg",
     title: "Headphone 5.1",
     value: "R$ 969,99",
     rating: "4.4",
   },
   {
+    id: "5",
     img: "../assets/products/product6.jpg",
     title: "Headset 7.1",
     value: "R$ 469,99",
     rating: "4.4",
   },
   {
+    id: "6",
     img: "../assets/products/product7.jpg",
     title: "TWS Gamer",
     value: "R$ 249,99",
     rating: "4.7",
   },
   {
+    id: "7",
     img: "../assets/products/product8.jpg",
     title: "Headset Gamer",
     value: "R$ 459,90",
     rating: "4.6",
   },
   {
+    id: "8",
     img: "../assets/products/product9.jpg",
     title: "Headset Gamer",
     value: "R$ 169,99",
     rating: "4.8",
   },
   {
+    id: "9",
     img: "../assets/products/product10.jpg",
     title: "TWS APTX",
     value: "R$ 1169,99",
@@ -129,7 +139,7 @@ products.forEach((product) => {
         <button class="btn-cart">
           <p class="value">${product.value} <i class="fa-solid fa-cart-shopping"></i></p>
         </button>
-        <button class="btn-favorite" id="btn-favorite"><i class="fa-solid fa-heart favorite"></i></button>
+        <button class="btn-favorite" id="btn-favorite ${product.id}"><i class="fa-solid fa-heart favorite"></i></button>
       </div>
     </div>
   `;
