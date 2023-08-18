@@ -32,7 +32,6 @@
             <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
         </div>
         <div class="top-actions">
-            <a href="#">Login<i class="fa-solid fa-user"></i></a>
             <a href="#">Atendimento<i class="fa-brands fa-rocketchat"></i></a>
             <button class="btn-color">
                 <p>Tema</p><i class="fa-solid fa-sun"></i>
@@ -46,7 +45,7 @@
         <button class="btn-close" onclick="closeSideBar()"><i class="fa-solid fa-close"></i></button>
         <nav>
             <div>
-                <button class="dropbtn">Departamentos <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropbtn">Departamentos <i class="fa-solid fa-bars-progress"></i></button>
                 <div class="drop-content">
                     <ul class="droplist">
                         <li>
@@ -80,7 +79,7 @@
 
 
             <div>
-                <button class="dropbtn">Promoções <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropbtn">Promoções <i class="fa-solid fa-percent"></i></button>
                 <div class="drop-content">
                     <ul class="droplist">
                         <li>
@@ -103,7 +102,7 @@
                 </div>
             </div>
             <div>
-                <button class="dropbtn">Novidades <i class="fa-solid fa-caret-down"></i></button>
+                <button class="dropbtn">Novidades <i class="fa-regular fa-newspaper"></i></button>
                 <div class="drop-content">
                     <ul class="droplist">
                         <li>
@@ -130,15 +129,20 @@
         </nav>
     </aside>
     <nav>
-        <ul class="nav-bar">
+        <div class="nav-main">
             <div>
                 <button class="btn-open" onclick="openSideBar()"><i class="fa-solid fa-bars"></i></button>
             </div>
 
             <input class="search-bar" type="search" id="search" placeholder="Procurar por . . .">
-            <li><a href="#">Favoritos</a><i class="fa-solid fa-heart"></i></li>
-            <li><a href="#">Carrinho</a><i class="fa-solid fa-cart-shopping"></i></li>
-        </ul>
+
+            <div>
+                <ul class="nav-bar">
+                    <li><a href="#">Favoritos</a><i class="fa-solid fa-heart"></i></li>
+                    <li><a href="#">Carrinho</a><i class="fa-solid fa-cart-shopping"></i></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 </header>
 

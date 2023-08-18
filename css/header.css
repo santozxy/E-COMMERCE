@@ -5,9 +5,9 @@ header {
 
 .top-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
     color: var(--terciary);
     border-bottom: 1px solid #303030a3;
 }
@@ -25,11 +25,6 @@ header {
     color: var(--primary);
 }
 
-.top-title-mobile h1 {
-    display: none;
-    text-align: center;
-    font-size: 3rem;
-}
 
 .top-title h1 {
     text-align: center;
@@ -69,11 +64,19 @@ header {
     gap: 1rem;
 }
 
+/*------------------------ Navegação Principal ----------------------------*/
+
+.nav-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
 
 .nav-bar {
     padding: 1.5rem;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -127,7 +130,12 @@ header {
 }
 
 .btn-open i {
+    transition: color .3s ease-in;
     font-size: 3rem;
+}
+
+.btn-open i:hover {
+    color: var(--terciary);
 }
 
 /*------------------------ SideBar ----------------------------*/
@@ -145,6 +153,7 @@ header {
     opacity: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 1rem;
 }
@@ -155,24 +164,21 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 2rem;
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+.btn-close i:hover {
+    color: var(--terciary);
 }
 
 .btn-close i {
+    transition: color .3s ease-in;
     text-align: center;
     font-size: 3rem;
+    color: var(--primary);
 }
-
-.nav-sidebar {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-sidebar li {
-
-    justify-content: center;
-    align-items: center;
-}
-
 
 
 /*------------------------ Dropdown Side ----------------------------*/
@@ -268,7 +274,6 @@ header {
         font-size: 2.5rem;
     }
 
-
     .nav-bar li a {
         font-size: 1rem;
     }
@@ -293,6 +298,9 @@ header {
 
     .nav-bar {
         gap: 1rem;
+    }
+    .sidebar{
+        width: 100%;
     }
 
     .social-icons,
