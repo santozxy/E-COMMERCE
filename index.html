@@ -7,8 +7,9 @@
     <title>HSHOP</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/home.css">
     <!-- LINKS EXTERNOS -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@200;300;400&display=swap"
@@ -22,7 +23,7 @@
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
         </div>
-        <div class="top-title desktop">
+        <div class="top-title">
             <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
         </div>
         <div class="top-actions">
@@ -34,26 +35,15 @@
         </div>
     </div>
 
-    <!-- NAV MOBILE -->
-    <nav class="nav-mobile">
-        <ul class="nav-bar">
-            <button class="btn-open" onclick="openSideBar"><i class="fa-solid fa-bars"></i></button>
-            <div class="top-title">
-                <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
-            </div>
-            <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."></li>
-            <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
-            <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
-        </ul>
-    </nav>
+    <!-- NAV -->
 
-    <!-- NAV DESKTOP -->
-    <nav class="nav-desktop">
-        <ul class="nav-bar">
-            <li>
-                <div class="dropdown">
+    <aside class="sidebar" id="sidebar">
+        <button class="btn-close" onclick="closeSideBar()"><i class="fa-solid fa-close"></i></button>
+        <nav>
+            <ul class="nav-sidebar">
+                <li>
                     <button class="dropbtn">Departamentos <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
+                    <div class="drop-content">
                         <ul class="droplist">
                             <li>
                                 <a href="#">Intra-auricular</a>
@@ -80,13 +70,13 @@
                                 <a href="#">TWS</a>
                             </li>
                         </ul>
+
                     </div>
-                </div>
-            </li>
-            <li>
-                <div class="dropdown">
+                </li>
+                <li>
+
                     <button class="dropbtn">Promoções <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
+                    <div class="drop-content">
                         <ul class="droplist">
                             <li>
                                 <a href="#">Até 60% OFF</a>
@@ -104,14 +94,14 @@
                                 <a href="#">50% OFF</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </li>
 
-            <li>
-                <div class="dropdown">
+                    </div>
+                </li>
+
+                <li>
+
                     <button class="dropbtn">Novidades <i class="fa-solid fa-caret-down"></i></button>
-                    <div class="dropdown-content">
+                    <div class="drop-content">
                         <ul class="droplist">
                             <li>
                                 <a href="#">Apple Sonic</a>
@@ -133,111 +123,69 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-            </li>
 
+                </li>
+            </ul>
+        </nav>
 
-            <li><input class="search-bar" type="search" id="search" placeholder="Procurar por . . ."></li>
-            <li><a href="#">Favoritos<i class="fa-solid fa-heart"></i></a></li>
-            <li><a href="#">Carrinho<i class="fa-solid fa-cart-shopping"></i></a></li>
+    </aside>
+    <nav>
+        <ul class="nav-bar">
+            <div>
+                <button class="btn-open" onclick="openSideBar()"><i class="fa-solid fa-bars"></i></button>
+            </div>
+
+            <input class="search-bar" type="search" id="search" placeholder="Procurar por . . .">
+            <li><a href="#">Favoritos</a><i class="fa-solid fa-heart"></i></li>
+            <li><a href="#">Carrinho</a><i class="fa-solid fa-cart-shopping"></i></li>
         </ul>
     </nav>
-
 </header>
 
 
 <body>
     <main>
-
         <section class="slider">
-            <div class="slider-content">
-
-                <input type="radio" name="btn-radio" id="radio1">
-                <input type="radio" name="btn-radio" id="radio2">
-                <input type="radio" name="btn-radio" id="radio3">
-
-                <div class="slide-box one">
-                    <img class="img-desktop" src="assets/sliders/slider1.jpg" alt="slide 1">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="assets/sliders/slider1.jpg" alt="slide 1">
                 </div>
 
-                <div class="slide-box">
-                    <img class="img-desktop" src="assets/sliders/slider2.jpg" alt="slide 3">
-                </div>
-                <div class="slide-box">
-                    <img class="img-desktop" src="assets/sliders/slider3.jpg" alt="slide 3">
-
+                <div class="item">
+                    <img src="assets/sliders/slider2.jpg" alt="slide 3">
                 </div>
 
-                <div class="nav-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
+                <div class="item">
+                    <img src="assets/sliders/slider3.jpg" alt="slide 3">
                 </div>
-
-                <div class="nav-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-
             </div>
-            <div class="scroll-info">
-                <marquee direction=right>A cada R$ 119,00 em compras você ganha um cupom de frete grátis para usar como
+            <div class="marquee">
+                <p>A cada R$ 119,00 em compras você ganha um cupom de frete grátis para usar como
                     quiser! | 50% OFF em produtos selecionados, não perca</marquee>
             </div>
         </section>
+    </main>
+    <section class="home">
+        <div class="adds">
+            <div class="add"><a href="#"><img src="assets/Adds/bannerVertical1.jpg" alt="AirPods"></a></div>
+            <div class="add"><a href="#"><img src="assets/Adds/bannerVertical2.jpg" alt="Audora Sem Fio"></a></div>
+            <div class="add"><a href="#"><img src="assets/Adds/bannerVertical3.jpg" alt="Headset Wireless"></a></div>
+        </div>
 
-        <section class="home">
-            <div class="adds">
-                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical1.jpg" alt="Banner AirPods"></a></div>
-                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical2.jpg" alt="Banner Audora Sem Fio"></a>
-                </div>
-                <div class="add"><a href="#"><img src="assets/Adds/bannerVertical3.jpg"
-                            alt="Banner Headset Wireless"></a></div>
-            </div>
-            <!--<div class="categories">
-                <button>
-                    <p>Wireless</p>
-                </button>
-                <button>
-                    <p>Auricular</p>
-                </button>
-                <button>
-                    <p>Bluetooth</p>
-                </button>
-                <button>
-                    <p>Supra-auricular</p>
-                </button>
-                <button>
-                    <p>TWS</p>
-                </button>
-                <button>
-                    <p>Intra-auricula</p>
-                </button>
-                <button>
-                    <p>Surround 5.1</p>
-                </button>
-                <button>
-                    <p>Circumaural</p>
-                </button>
-
-            </div> -->
-
-
-            <div class="title-section">
-                <h1>Mais populares</h1>
-                <span></span>
-            </div>
-            <div class="products" id="product-container">
-
-            </div>
-
-        </section>
+        <div class="title-section">
+            <h1>Mais populares</h1>
+            <span></span>
+        </div>
+        <div class="products" id="product-container">
+        </div>
+    </section>
 
 
     </main>
     <script src="https://kit.fontawesome.com/bdfd365adb.js" crossorigin="anonymous" defer></script>
-    <script src="script.js"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

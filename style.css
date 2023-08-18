@@ -1,8 +1,8 @@
-:root{
-    --bg:#131313;
-     --primary:#a80e1a;
-    --terciary:#fff; 
-    --quaternary:#000;
+:root {
+    --bg: #131313;
+    --primary: #a80e1a;
+    --terciary: #fff;
+    --quaternary: #000;
 }
 
 
@@ -15,27 +15,17 @@
     border: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--bg);
     font-family: Poppins;
-}
-
-aside{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    background-color: var(--bg);
-}
-
-section{
     max-width: 1600px;
     margin: auto;
 }
+
 
 img {
     width: 100%;
@@ -45,15 +35,15 @@ a {
     cursor: pointer;
 }
 
-i{
+i {
     color: var(--primary);
 }
 
 
-h3{
+h3 {
     color: var(--terciary);
 }
 
-button{
+button {
     font-family: Poppins;
 }
