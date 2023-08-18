@@ -105,6 +105,20 @@ const products = [
     value: "R$ 1169,99",
     rating: "4.9",
   },
+  {
+    id: "10",
+    img: "../assets/products/product11.jpg",
+    title: "TWS APTX",
+    value: "R$ 1169,99",
+    rating: "4.9",
+  },
+  {
+    id: "11",
+    img: "../assets/products/product12.jpeg",
+    title: "Headphone JBL",
+    value: "R$ 1169,99",
+    rating: "4.9",
+  },
 ];
 
 const productContainer = document.getElementById("product-container");
