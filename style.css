@@ -26,6 +26,18 @@ body {
     margin: auto;
 }
 
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 1rem;
+}
 
 img {
     width: 100%;

@@ -1,17 +1,23 @@
 .sidebar {
-    position: absolute;
+    position: fixed;
+    height: 100vh;
     left: 0;
     top: 0;
     background-color: var(--bg);
     visibility: hidden;
-    padding: 1rem 3rem;
     box-shadow: 3px 4px 1rem;
     z-index: 99;
-    overflow: hidden;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    overflow-y: scroll;
+}
+
+aside nav{
+    position: sticky;
+
 }
 
 .btn-close {
@@ -25,6 +31,7 @@
     align-items: center;
     width: 2rem;
     border-radius: 5rem;
+    z-index: 1;
 }
 
 .btn-close i:hover {
@@ -34,10 +41,9 @@
 .btn-close i {
     transition: color .3s ease-in;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--primary);
 }
-
 
 /*------------------------ Dropdown Side ----------------------------*/
 
@@ -45,7 +51,6 @@
     background-color: var(--primary);
     color: #fff;
     font-size: 1.2rem;
-    border-radius: .3rem;
     border: none;
     cursor: pointer;
     font-weight: 500;
@@ -53,7 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: .5rem 3rem;
+    padding: .5rem 4rem;
     width: 100%;
     gap: 1rem;
 }
@@ -72,7 +77,7 @@
 .droplist li {
     padding: .7rem .4rem;
     width: 100%;
-    border-bottom: 1px solid rgba(58, 58, 58, 0.2);
+    border-bottom: 1px solid #3a3a3a33;
 }
 
 .drop-content a {
@@ -103,10 +108,13 @@
     border-bottom: 4px solid var(--primary);
 }
 
-.droplist li a.active {
-    color: var(--secondary);
-    height: 0;
-    width: 100%;
-    padding: 0;
-    border-bottom: 4px solid var(--primary);
+.droplist li i {
+    color: var(--terciary);
+}
+
+
+@media screen and (max-width:480px) {
+    .sidebar {
+        width: 100%;
+    }
 }

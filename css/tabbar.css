@@ -1,0 +1,31 @@
+.tab-bar {
+    position: sticky;
+    bottom: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    background-color: var(--bg);
+    border: 1px solid #3a3a3a33;
+    border-left: 1px solid #3a3a3a33;
+    border-right: 1px solid #3a3a3a33;
+}
+
+.tab-links {
+    display: flex;
+    justify-content: space-around;
+    border-radius: .5rem;
+    margin: .3rem;
+}
+
+.tab-links li {
+    padding: .5rem;
+    gap: .3rem;
+}
+
+.tab-links li a {
+    color: var(--terciary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
