@@ -28,10 +28,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function openSideBar() {
   document.getElementById("sidebar").style.visibility = "visible";
+  document.querySelector("header").style.opacity = "0.4"; 
+  document.querySelector("main").style.opacity = "0.4"; 
 }
 
 function closeSideBar() {
   document.getElementById("sidebar").style.visibility = "hidden";
+  document.querySelector("header").style.opacity = "1"; 
+  document.querySelector("main").style.opacity = "1"; 
 }
 
 const products = [

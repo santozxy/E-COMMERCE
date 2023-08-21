@@ -7,46 +7,6 @@ section.slider{
     overflow: hidden;
 }
 
-.slider-content{
-    width: 400%;
-    height: 100%;
-    display: flex;
-}
-
-.slider-content input{
-    display: none;
-}
-
-.slide-box{
-    width: 25%;
-    height: auto;
-    position: relative;
-    text-align: center;
-    transition: 1s;
-}
-
-.slide-box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.nav-manual, .nav-auto{
-    display: none;
-}
-
-#radio1:checked ~ .one{
-    margin-left: 0%;
-}
-
-#radio2:checked ~ .one{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .one{
-    margin-left: -50%;
-}
 
 .scroll-info{
     background-color: #2f2f2f;

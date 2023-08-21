@@ -13,6 +13,7 @@
     <link rel="icon" href="favicon.png" type="image/png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/home.css">
@@ -31,103 +32,15 @@
         <div class="top-title">
             <h1> <a href="#" class="logo">HSHOP <i class="fa-solid fa-headphones-simple"></i></a></h1>
         </div>
-        <div class="top-actions">
-            <a href="#">Atendimento<i class="fa-brands fa-rocketchat"></i></a>
-            <button class="btn-color">
-                <p>Tema</p><i class="fa-solid fa-sun"></i>
-            </button>
+        <div>
+            <ul class="top-actions">
+                <li><a href="#">Login<i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#">Chat<i class="fa-brands fa-rocketchat"></i></a></li>
+                <li> <button class="btn-color">Modo <i class="fa-solid fa-sun"></i></button></li>
+            </ul>
         </div>
     </div>
 
-    <!-- Navegação Lateral -->
-
-    <aside class="sidebar" id="sidebar">
-        <button class="btn-close" onclick="closeSideBar()"><i class="fa-solid fa-close"></i></button>
-        <nav>
-            <div>
-                <button class="dropbtn">Departamentos <i class="fa-solid fa-bars-progress"></i></button>
-                <div class="drop-content">
-                    <ul class="droplist">
-                        <li>
-                            <a href="#">Intra-auricular</a>
-                        </li>
-                        <li>
-                            <a href="#">Headset Gamer</a>
-                        </li>
-                        <li>
-                            <a href="#">Headset Work</a>
-                        </li>
-                        <li>
-                            <a href="#">Headphones</a>
-                        </li>
-                        <li>
-                            <a href="#">Bluetooth</a>
-                        </li>
-                        <li>
-                            <a href="#">Auricular</a>
-                        </li>
-                        <li>
-                            <a href="#">Wireless</a>
-                        </li>
-                        <li>
-                            <a href="#">TWS</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-
-
-            <div>
-                <button class="dropbtn">Promoções <i class="fa-solid fa-percent"></i></button>
-                <div class="drop-content">
-                    <ul class="droplist">
-                        <li>
-                            <a href="#">Até 60% OFF</a>
-                        </li>
-                        <li>
-                            <a href="#">Apenas Hoje</a>
-                        </li>
-                        <li>
-                            <a href="#">Este mês</a>
-                        </li>
-                        <li>
-                            <a href="#">1 por 2</a>
-                        </li>
-                        <li>
-                            <a href="#">50% OFF</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <div>
-                <button class="dropbtn">Novidades <i class="fa-regular fa-newspaper"></i></button>
-                <div class="drop-content">
-                    <ul class="droplist">
-                        <li>
-                            <a href="#">Apple Sonic</a>
-                        </li>
-                        <li>
-                            <a href="#">JBL Sports</a>
-                        </li>
-                        <li>
-                            <a href="#">Sony Over</a>
-                        </li>
-                        <li>
-                            <a href="#">Samsung</a>
-                        </li>
-                        <li>
-                            <a href="#">HyperX</a>
-                        </li>
-                        <li>
-                            <a href="#">Husky</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </aside>
     <nav>
         <div class="nav-main">
             <div>
@@ -145,6 +58,100 @@
         </div>
     </nav>
 </header>
+
+<!-- Navegação Lateral -->
+
+<aside class="sidebar" id="sidebar">
+    <button class="btn-close" onclick="closeSideBar()"><i class="fa-solid fa-close"></i></button>
+    <div class="top-title">
+        <h1> <a href="#" class="logo">HSHOP</a></h1>
+    </div>
+    <nav>
+        <div>
+            <button class="dropbtn">Departamentos <i class="fa-solid fa-bars-progress"></i></button>
+            <div class="drop-content">
+                <ul class="droplist">
+                    <li>
+                        <a href="#">Headset Gamer<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Intra-auricular<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Headset Work<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Headphones<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Bluetooth<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Auricular<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Wireless<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">TWS<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div>
+            <button class="dropbtn">Promoções <i class="fa-solid fa-percent"></i></button>
+            <div class="drop-content">
+                <ul class="droplist">
+                    <li>
+                        <a href="#">Apenas Hoje</a>
+                    </li>
+                    <li>
+                        <a href="#">Até 60% OFF</a>
+                    </li>
+                    <li>
+                        <a href="#">Este mês</a>
+                    </li>
+                    <li>
+                        <a href="#">50% OFF</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div>
+            <button class="dropbtn">Novidades <i class="fa-regular fa-newspaper"></i></button>
+            <div class="drop-content">
+                <ul class="droplist">
+                    <li>
+                        <a href="#">Apple Sonic<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">JBL Sports<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Sony Over<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Samsung<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">HyperX<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Husky<i class="fa-solid fa-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+</aside>
 
 <body>
     <main>
@@ -182,6 +189,7 @@
             <div class="products" id="product-container">
             </div>
         </section>
+
     </main>
     <script src="https://kit.fontawesome.com/bdfd365adb.js" crossorigin="anonymous" defer></script>
     <script src="js/owl/jquery.min.js"></script>
