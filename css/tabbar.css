@@ -1,5 +1,5 @@
 .tab-bar {
-    position: -webkit-sticky;
+    position: sticky;
     bottom: -2rem;
     width: 100%;
     background-color: var(--bg);
