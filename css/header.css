@@ -77,6 +77,11 @@ header {
     cursor: pointer;
 }
 
+#btn-color {
+    display: none;
+}
+
+
 /*------------------------ Navegação Principal ----------------------------*/
 
 .nav-main {
@@ -93,6 +98,29 @@ header {
     width: 100%;
     justify-content: space-around;
     align-items: center;
+}
+
+.btn-open {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-open i {
+    transition: color .3s ease-in;
+    font-size: 3rem;
+}
+
+.btn-open i:hover {
+    color: var(--terciary);
+}
+
+.search-bar {
+    padding: 1rem .5rem;
+    border-radius: .5rem;
+    width: 100%;
+    border: 0;
+    background-color: var(--terciary);
+    font-weight: bold;
 }
 
 .nav-bar li {
@@ -127,30 +155,10 @@ header {
     border-bottom: 4px solid var(--primary);
 }
 
-
-.search-bar {
-    padding: 1rem .5rem;
-    border-radius: .5rem;
-    width: 100%;
-    border: 0;
-    background-color: var(--terciary);
-    font-weight: bold;
+.cart-mobile {
+    font-size: 1.5rem;
+    display: none;
 }
-
-.btn-open {
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.btn-open i {
-    transition: color .3s ease-in;
-    font-size: 3rem;
-}
-
-.btn-open i:hover {
-    color: var(--terciary);
-}
-
 
 @keyframes initialize {
     from {
@@ -188,7 +196,6 @@ header {
 
 @media screen and (max-width:480px) {
     .nav-main {
-        justify-content: center;
         gap: 1rem;
     }
 
@@ -206,6 +213,26 @@ header {
     .nav-bar {
         gap: 1rem;
         display: none;
+    }
+
+    .cart-mobile {
+        display: inline;
+    }
+
+    #btn-color {
+        display: inline;
+        position: fixed;
+        bottom: .8rem;
+        right: .3rem;
+        font-size: 1.3rem;
+        z-index: 99;
+    }
+
+    #btn-color i {
+        padding: .5rem;
+        border-radius: 50%;
+        background-color: var(--bg);
+        border: 2px solid #3a3a3a33;
     }
 
 }

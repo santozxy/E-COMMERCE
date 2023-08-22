@@ -11,10 +11,22 @@ $(".owl-carousel").owlCarousel({
 
 document.addEventListener("DOMContentLoaded", function () {
   const button = document.querySelector(".btn-color");
+  const buttonMobile = document.querySelector("#btn-color");
   const icon = button.querySelector("i");
   let isLightMode = false;
 
   button.addEventListener("click", function () {
+    isLightMode = !isLightMode;
+    const newBgColor = isLightMode ? "#f4f4f4" : "#131313";
+    const newTertiaryColor = isLightMode ? "#000" : "#fff";
+    const newIconClass = isLightMode ? "fa-moon" : "fa-sun";
+
+    document.documentElement.style.setProperty("--bg", newBgColor);
+    document.documentElement.style.setProperty("--terciary", newTertiaryColor);
+    icon.classList.remove(isLightMode ? "fa-sun" : "fa-moon");
+    icon.classList.add(newIconClass);
+  });
+  buttonMobile.addEventListener("click", function () {
     isLightMode = !isLightMode;
     const newBgColor = isLightMode ? "#f4f4f4" : "#131313";
     const newTertiaryColor = isLightMode ? "#000" : "#fff";
@@ -30,34 +42,21 @@ document.addEventListener("DOMContentLoaded", function () {
 function openSideBar() {
   const sidebar = document.getElementById("sidebar");
   const header = document.querySelector("header");
-  const body = document.querySelector("main");
+  const main = document.querySelector("main");
   sidebar.style.visibility = "visible";
   header.style.opacity = "0.4";
-  header.style.zIndex = "-1";
-  body.style.opacity = "0.4";
-  body.style.zIndex = "-1";
+  main.style.opacity = "0.4";
   document.querySelector("body").style.overflowY = "hidden";
-  document.AddEventListener("click", clickHandler);
 }
 
 function closeSideBar() {
   const sidebar = document.getElementById("sidebar");
   const header = document.querySelector("header");
-  const body = document.querySelector("main");
+  const main = document.querySelector("main");
   sidebar.style.visibility = "hidden";
   header.style.opacity = "1";
-  header.style.zIndex = "0";
-  body.style.opacity = "1";
-  body.style.zIndex = "0";
+  main.style.opacity = "1";
   document.querySelector("body").style.overflowY = "visible";
-  document.removeEventListener("click", clickHandler);
-}
-
-function clickHandler(event) {
-  const clickedElement = event.target;
-  if (!sidebar.contains(clickedElement) && clickedElement !== sidebar) {
-    closeSideBar();
-  }
 }
 
 const products = [
